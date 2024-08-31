@@ -41,8 +41,11 @@ a{
 button:focus,
 input:focus,
 input:focus,
-textarea,
-textarea:focus {
+textarea:focus,
+select:focus{
+  outline: 0;
+}
+select [name="select"]:focus {
   outline: 0;
 }
 
@@ -52,7 +55,9 @@ textarea:focus::placeholder {
 }
 input{
   color: white;
+  border: 1px solid #E7E7E7;
 }
+
 
 input:focus {
     color: #fbf2f2;
@@ -75,6 +80,10 @@ color: white;
       height: 20px ;
       border-radius: 50% ;
   }
+  .cursor-aplly{
+    cursor: pointer;
+  }
+ 
 
 /* banner section css */
 
@@ -242,6 +251,25 @@ color: white;
       font-size: 13px;
     }
 
+  }
+
+  .btn-design{
+    button{
+      width: 195px;
+      height: 55px;
+      background: red;
+      color: #fff;
+      border: 0;
+      font-size: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      &:hover{
+        background: #4f0808;
+        color: rgb(255, 255, 255);
+        transition: ease all .4s;
+        font-size: bolder;
+      }
+    }
   }
 }
 
@@ -411,7 +439,7 @@ background: #1B1B1B;
     .footer-line{
         width: 500px;
         height: 0;
-        border: 1px solid #ccc;
+        border: 1px solid rgba(255, 255, 255, 0.306);
 
     }
    
@@ -421,18 +449,39 @@ background: #1B1B1B;
       display: flex;
       justify-content: center;
       align-items: center;
+      border-radius: 5px;
+      &:hover{
+        background: #000;
+        transition: ease all .4s;
+      }
+    }
+
+    .footer-icon{
+      border-radius: 5px;
+      &:hover{
+        background: rgb(0, 0, 0);
+        color: white;
+        transition: ease all .4s;
+      }
     }
 
     .footer-input [type="email"]{
       color: #CCCCCC;
       background: #1B1B1B;
+      border: 1px solid rgba(255, 255, 255, 0.206);
       
     
     }
+    .footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.742);
+  opacity: 1;
+}
 }
 
 .footer-text-color{
   color: #CCCCCC;
+  background-image: url(../images/footer-img.png);
+  background-repeat: no-repeat;
 }
 .bg-custom-footer{
   background: #262525;

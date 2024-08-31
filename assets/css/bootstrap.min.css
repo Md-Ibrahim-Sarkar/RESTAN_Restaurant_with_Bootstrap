@@ -2030,7 +2030,7 @@ progress {
 }
 .form-control:focus {
   color: var(--bs-body-color);
-  /* background-color: var(--bs-body-bg); */
+  background-color: var(--bs-body-bg);
  
   outline: 0;
   
@@ -3879,6 +3879,7 @@ fieldset:disabled .btn {
   justify-content: space-between;
 }
 .navbar-brand {
+  cursor: pointer;
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
