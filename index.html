@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font css -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.webp" type="image">
+
+  <title>RESTAN</title>
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg pt-3 ">
+    <div class="container bg-white position-relative rounded-2 z-1">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
+
+      <!-- offcanvas start -->
+
+      <button class=" border-danger fs-1 px-2 rounded-3 bg-white py-2 d-lg-none " type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <div class=" d-flex align-items-center">
+          <img src="assets/images/toggler-logo.png" alt="">
+        </div>
+      </button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <div class="offcanvas-title text-uppercase textd" id="offcanvasScrollingLabel"><img class="img-fluid w-75"
+              src="assets/images/footer-logo.png" alt=""></div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-0 px-lg-4  active fs-5 fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  px-0 px-lg-4   fs-5 fw-bold" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 px-lg-4  fs-5 fw-bold" href="#">Set menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 px-lg-4  fs-5 fw-bold" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-lg-none">
+            <input type="email" placeholder="Your Email" class="form-control bg-white d-lg-none">
+            <div class="mt-3 mb-5">
+              <button type="submit" class="btn bg-danger text-white">Subscribe</button>
+            </div>
+          </div>
+          <div class="icon mt-3 mb-5 w-100 d-lg-none">
+            <a class=" py-2 px-3 me-1 bg-custom rounded text-white fs-4" href="#"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a class=" p-2 me-1 bg-custom rounded text-white fs-4" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class=" p-2 me-1 bg-custom rounded text-white fs-4" href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a class=" py-2 px-3 bg-custom rounded text-white fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- offcanvas end -->
+      <div class="d-none d-lg-block">
+        <i class=" fa-solid fa-cart-shopping  fs-3 position-relative pe-3 "></i>
+        <sup
+          class="card-number d-flex align-items-center justify-content-center sup-item me-5 align-top bg-danger text-white fw-bold ">10</sup>
+        <span class="border-start h-100 pe-3"></span>
+
+        <img class="" src="assets/images/toggler-logo.png" alt="toggler">
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- banner section start -->
+
+  <div class="banner position-absolute top-0 w-100 ">
+
+    <div class="position-relative z-0 ">
+      <div class="container ">
+        <div class="banner-item ">
+          <div class="w-100 banner-text d-block text-center align-items-center">
+            <div class="w-100 h-auto d-flex justify-content-center align-items-center">
+              <div class="heading-text w-75 h-auto  ">
+                <h1 class="text-white">RESTAN</h1>
+                <div class="d-flex w-100 pb-2 justify-content-center">
+                  <div class="banner-p-text d-flex align-items-center justify-content-center  ">
+                    <p class="d-inline-block text-uppercase text-white fw-bold ">Restaurant</p>
+                  </div>
+                </div>
+                <div class="span-text pt-2">
+                  <div class="d-flex justify-content-lg-center align-items-center">
+                    <p class="text-white ms-3 me-3">Book your table now</p>
+                    <span class="border-span d-inline-block "></span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 z-n1 "></div>
+    </div>
+  </div>
+
+
+  <!-- banner section end -->
+
+  <!-- Best food ideas start -->
+
+  <section class="best-food">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <img class="img-fluid mb-5" src="assets/images/best-food-img.png" alt="best food">
+        </div>
+        <div class="col-lg-6 position-relative">
+          <div class="first-text ">
+            <h2 class="fs-1 fw-bold ">Best food ideas & traditions in the world</h2>
+          </div>
+          <div class="row pt-4">
+            <div class="col-lg-6  col-md-6">
+              <div class="mb-5">
+                <p class="pe-lg-3 mb-4">Codulgence diminution so discovered mr apartments. Are off under folly death
+                  wrote
+                  cause her
+                  way spite.
+                  Plan
+                  upon yet
+                  way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She
+                  sang
+                  know
+                  now.</p>
+                <button class="btn bg-danger  py-1 px-2 text-uppercase text-white rounded-0">explore
+                  Menu</button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="sceond-text bg-black text-white">
+                <div class="position-relative">
+                  <div class="px-4 py-3">
+                    <h5 class="m-0">Breakfast</h5>
+                    <p class="m-0 mb-2">Reservations for every day from 07am to 11.30am</p>
+                    <h5 class="m-0">Lunch</h5>
+                    <p class="m-0 mb-2">Reservations for every day from 12pm to 1.30pm</p>
+                    <h5 class="m-0">Dinner</h5>
+                    <p class="m-0 mb-2">Reservations for every day from 6pm to 8.45pm</p>
+                  </div>
+                  <div class="position-absolute  bottom-0 start-0">
+                    <img class=" img-fluid w-50" src="assets/images/footer-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Best food ideas end -->
+
+  <!--Specials Menu section start -->
+
+
+  <section class="specials-menu mt-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 fs-1">Our Specials Menu</h2>
+      <div class="d-flex justify-content-center w-100 h-auto">
+        <div class="row d-flex justify-content-center w-75 h-auto border">
+
+          <div
+            class="menu-hover col-lg-2 col-md-2 filter-item m-2 text-uppercase rounded d-flex justify-content-center align-items-center  fw-bold">
+            main
+            dishes</div>
+          <div
+            class="menu-hover col-lg-2 col-md-2 filter-item m-2 text-uppercase rounded d-flex justify-content-center align-items-center  fw-bold">
+            Desserts</div>
+          <div
+            class="menu-hover col-lg-2 col-md-2 filter-item m-2 text-uppercase rounded d-flex justify-content-center align-items-center fw-bold ">
+            Sea Food</div>
+          <div
+            class="menu-hover col-lg-2 col-md-2 filter-item m-2 text-uppercase rounded d-flex justify-content-center align-items-center fw-bold ">
+            Beverage</div>
+          <div
+            class="menu-hover col-lg-2 col-md-2 filter-item m-2 text-uppercase rounded d-flex justify-content-center align-items-center  fw-bold">
+            Set
+            menu</div>
+
+        </div>
+      </div>
+      <div class="row justify-content-around pt-5">
+        <!-- 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="food-item border rounded-4">
+            <div class="food-img position-relative">
+              <img class="w-100" src="assets/images/specials-menu-img-1.png" alt="Braised Chicken Legs">
+              <div class="position-absolute bottom-0 py-3 ps-2 rounded-end-3 rounded-bottom-0 bg-white">
+                <span class="ps-2 fw-bold">Price: 250/=</span>
+                <span class="color-custom ms-4"><i class="fa-solid fa-star"></i></span>
+                <span class="fw-bold">4.9 (2.2K)</span>
+              </div>
+            </div>
+            <div class="food-text px-3 pt-1">
+              <h5 class="fw-bold">Braised Chicken Legs</h5>
+              <div class="item-details d-flex justify-content-start align-items-center mt-2">
+                <span class="me-2">4 chicken legs</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="mx-2">Chili sauce</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="ms-2">Soft Drinks</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+              <div class="add-to-card d-flex justify-content-center align-items-center w-75 rounded-5">
+                <i class=" fa-solid fa-cart-shopping me-1 fs-5"></i>
+                <span class="color-custom fs-5">Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="food-item border rounded-4">
+            <div class="food-img position-relative">
+              <img class="w-100" src="assets/images/specials-menu-img-2.png" alt="Braised Chicken Legs">
+              <div class="position-absolute bottom-0 py-3 ps-2 rounded-end-3 rounded-bottom-0 bg-white">
+                <span class="ps-2 fw-bold">Price: 250/=</span>
+                <span class="color-custom ms-4"><i class="fa-solid fa-star"></i></span>
+                <span class="fw-bold">4.9 (2.2K)</span>
+              </div>
+            </div>
+            <div class="food-text px-3 pt-1">
+              <h5 class="fw-bold">Braised Chicken Legs</h5>
+              <div class="item-details d-flex justify-content-start align-items-center mt-2">
+                <span class="me-2">4 chicken legs</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="mx-2">Chili sauce</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="ms-2">Soft Drinks</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+              <div class="add-to-card d-flex justify-content-center align-items-center w-75 rounded-5">
+                <i class=" fa-solid fa-cart-shopping me-1 fs-5"></i>
+                <span class="color-custom fs-5">Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="food-item border rounded-4">
+            <div class="food-img position-relative">
+              <img class="w-100" src="assets/images/specials-menu-img-3.png" alt="Braised Chicken Legs">
+              <div class="position-absolute bottom-0 py-3 ps-2 rounded-end-3 rounded-bottom-0 bg-white">
+                <span class="ps-2 fw-bold">Price: 250/=</span>
+                <span class="color-custom ms-4"><i class="fa-solid fa-star"></i></span>
+                <span class="fw-bold">4.9 (2.2K)</span>
+              </div>
+            </div>
+            <div class="food-text px-3 pt-1">
+              <h5 class="fw-bold">Braised Chicken Legs</h5>
+              <div class="item-details d-flex justify-content-start align-items-center mt-2">
+                <span class="me-2">4 chicken legs</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="mx-2">Chili sauce</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="ms-2">Soft Drinks</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+              <div class="add-to-card d-flex justify-content-center align-items-center w-75 rounded-5">
+                <i class=" fa-solid fa-cart-shopping me-1 fs-5"></i>
+                <span class="color-custom fs-5">Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="food-item border rounded-4">
+            <div class="food-img position-relative">
+              <img class="w-100" src="assets/images/specials-menu-img-4.png" alt="Braised Chicken Legs">
+              <div class="position-absolute bottom-0 py-3 ps-2 rounded-end-3 rounded-bottom-0 bg-white">
+                <span class="ps-2 fw-bold">Price: 250/=</span>
+                <span class="color-custom ms-4"><i class="fa-solid fa-star"></i></span>
+                <span class="fw-bold">4.9 (2.2K)</span>
+              </div>
+            </div>
+            <div class="food-text px-3 pt-1">
+              <h5 class="fw-bold">Braised Chicken Legs</h5>
+              <div class="item-details d-flex justify-content-start align-items-center mt-2">
+                <span class="me-2">4 chicken legs</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="mx-2">Chili sauce</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="ms-2">Soft Drinks</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+              <div class="add-to-card d-flex justify-content-center align-items-center w-75 rounded-5">
+                <i class=" fa-solid fa-cart-shopping me-1 fs-5"></i>
+                <span class="color-custom fs-5">Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="food-item border rounded-4">
+            <div class="food-img position-relative">
+              <img class="w-100" src="assets/images/specials-menu-img-5.png" alt="Braised Chicken Legs">
+              <div class="position-absolute bottom-0 py-3 ps-2 rounded-end-3 rounded-bottom-0 bg-white">
+                <span class="ps-2 fw-bold">Price: 250/=</span>
+                <span class="color-custom ms-4"><i class="fa-solid fa-star"></i></span>
+                <span class="fw-bold">4.9 (2.2K)</span>
+              </div>
+            </div>
+            <div class="food-text px-3 pt-1">
+              <h5 class="fw-bold">Braised Chicken Legs</h5>
+              <div class="item-details d-flex justify-content-start align-items-center mt-2">
+                <span class="me-2">4 chicken legs</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="mx-2">Chili sauce</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="ms-2">Soft Drinks</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+              <div class="add-to-card d-flex justify-content-center align-items-center w-75 rounded-5">
+                <i class=" fa-solid fa-cart-shopping me-1 fs-5"></i>
+                <span class="color-custom fs-5">Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="food-item border rounded-4">
+            <div class="food-img position-relative">
+              <img class="w-100" src="assets/images/specials-menu-img-6.png" alt="Braised Chicken Legs">
+              <div class="position-absolute bottom-0 py-3 ps-2 rounded-end-3 rounded-bottom-0 bg-white">
+                <span class="ps-2 fw-bold">Price: 250/=</span>
+                <span class="color-custom ms-4"><i class="fa-solid fa-star"></i></span>
+                <span class="fw-bold">4.9 (2.2K)</span>
+              </div>
+            </div>
+            <div class="food-text px-3 pt-1">
+              <h5 class="fw-bold">Braised Chicken Legs</h5>
+              <div class="item-details d-flex justify-content-start align-items-center mt-2">
+                <span class="me-2">4 chicken legs</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="mx-2">Chili sauce</span>
+                <div class="ellipse d-inline-block"></div>
+                <span class="ms-2">Soft Drinks</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+              <div class="add-to-card d-flex justify-content-center align-items-center w-75 rounded-5">
+                <i class=" fa-solid fa-cart-shopping me-1 fs-5"></i>
+                <span class="color-custom fs-5">Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Specials Menu section end -->
+
+  <!-- Favorite Private Table section start -->
+
+
+  <section class="private-table position-relative z-0">
+    <div class="container mt-5">
+      <div class="row pt-5">
+        <div class="col-lg-6 d-flex text-white">
+          <div class="text-area w-100">
+            <h2 class="pt-4 mb-4 fs-1 ">Reservation Your Favorite Private Table</h2>
+            <p class="mb-5 fs-5">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time
+              Bar
+              opens
+              in the
+              center of
+              Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time
+              forgetting.</p>
+            <div class="d-flex justify-content-between">
+              <div>
+                <h5>Breakfast Menu</h5>
+                <p>125+ items</p>
+              </div>
+              <div>
+                <h5>Breakfast Menu</h5>
+                <p>125+ items</p>
+              </div>
+              <div>
+                <h5>Breakfast Menu</h5>
+                <p>125+ items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pb-5">
+          <div class="bg-white">
+            <form action="#" class="p-4 mt-4">
+              <input class="form-control bg-white d-block w-100 mt-2" type="text" placeholder="Phone No">
+              <select class="form-select d-block w-100 mt-2" name="" id="">
+                <option class="text-black">1 Person</option>
+                <option>2 Person</option>
+                <option>1 </option>
+                <option>1</option>
+              </select>
+              <input class="form-control bg-white d-block w-100 mt-2" type="date" placeholder="Date">
+              <select class="form-select d-block w-100 mt-2" name="" id="">
+                <option value="">10:00 PM</option>
+                <option value="">11:00 PM</option>
+                <option value="">12:00 PM</option>
+                <option value="">01:00 AM</option>
+              </select>
+              <button class="btn bg-custom px-4 mt-4" type="submit">Book a table</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 z-n1 "></div>
+  </section>
+
+  <!-- Favorite Private Table section end -->
+
+  <!-- Food Gallery section start -->
+
+  <section class="food-gallery">
+    <div class="container my-5">
+      <h2 class="text-center fs-1 fw-bold mb-4">Our Food Gallery</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card position-relative ">
+            <div class="img-hover">
+              <img src="assets/images/gallery-img-one.png" class="img-fluid w-100 h-100 " alt="Lemon Juice">
+            </div>
+            <div class=" w-100 h-100">
+              <div class="position-absolute bottom-0 p-5 ms-2 ">
+                <div class="gallery-img-text">
+                  <p class="text-white h4 fw-bolder">Minion Drinks</p>
+                  <p class="text-white h5 fw-bold">Cold Lemon Juice</p>
+                </div>
+              </div>
+              <div class="under-line-left h-75 position-absolute bottom-0 ms-5 mb-4">
+              </div>
+              <div class="under-line-bottom w-75 position-absolute bottom-0 mb-5 ms-3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row g-4">
+            <div class="col-md-6 ">
+              <div class="card img-hover">
+                <img src="assets/images/gallery-img-two.png" class=" img-hover" alt="Pizza">
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="card img-hover">
+                <img src="assets/images/gallery-img-three.png" class=" img-hover" alt="Food three">
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="card img-hover">
+                <img src="assets/images/gallery-img-four.png" class=" img-hover" alt="food four">
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="card img-hover">
+                <img src="assets/images/gallery-img-five.png" class=" img-hover" alt="Bowl of Noodles">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Gallery section end -->
+
+
+  <!-- footer start -->
+
+  <footer class="footer">
+    <div class="container position-relative">
+      <div class="footer-logo py-5 d-flex align-items-center justify-content-between">
+        <div class="footer-line"></div>
+        <div><img class="fs-1 mx-4" src="assets/images/footer-logo.png" alt="footer logo"></div>
+        <div class="footer-line"></div>
+      </div>
+      <div class="row footer-text-color mb-5">
+        <div class="col-lg-3 d-md-flex justify-content-md-center align-content-md-center">
+          <div>
+            <h4 class="fw-bold mb-4">About Us</h4>
+            <p class="lh-lg">Continued at zealously
+              necessary is Surrounded sir motionless she end literature. Gay
+              direction neglected.
+            </p>
+            <div class="icon mt-3 mb-5 w-100">
+              <a class=" py-2 px-3 me-1 bg-custom-footer text-white fs-4" href="#"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a class=" p-2 me-1 bg-custom-footer text-white fs-4" href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a class=" p-2 me-1 bg-custom-footer text-white fs-4" href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a class=" py-2 px-3 bg-custom-footer text-white fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 mb-4">
+          <h4 class="fw-bold mb-4">Explore</h4>
+          <ul class=" ps-0">
+            <li class="mb-2"><a href="#">Home</a></li>
+            <li class="mb-2"><a href="#">About</a></li>
+            <li class="mb-2"><a href="#">Contact</a></li>
+            <li class="mb-2"><a href="#">Return Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h4 class="fw-bold mb-4">Contact Info</h4>
+          <div class="d-flex mb-2 align-items-center w-100">
+            <a class=" icon-style bg-custom me-3 text-white fs-4" href="#"><i class="fas fa-location-arrow"></i>
+            </a>
+            <p class="w-100 m-0">Dogair Bazar, Signboard, demra, Dhaka - 1206</p>
+          </div>
+          <div class="d-flex mb-3 align-items-center w-100">
+            <a class="  icon-style bg-custom me-3  text-white fs-4" href="#"><i class="fa-solid fa-phone"></i>
+            </a>
+            <div>
+              <a href="tel:+8801728000000" class="mb-0 d-block">+880 1728 000000</a>
+              <a href="tel:+8801728000000" class="mb-0 d-block">+880 1728 000000</a>
+            </div>
+          </div>
+          <div class="d-flex mb-3 align-items-center w-100">
+            <a class=" icon-style bg-custom  me-3  text-white fs-4" href="#"><i class="fa-solid fa-square-envelope"></i>
+            </a>
+            <a href="mailto:ibrahim06978@gmail.com" class="m-0">ibrahim06978@gmail.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="fw-bold mb-2">Subscription</h3>
+          <p class="mb-4">Join our subscribers list to get the latest news and special offers.</p>
+          <div class="footer-input">
+            <input class="form-control mb-3" type="email" placeholder="Your email">
+            <button class="btn bg-custom text-white px-4 py-2" type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-img position-absolute d-none d-md-block">
+        <img class="img-fluid" src="assets/images/footer-img.png" alt="">
+      </div>
+    </div>
+    <div class="footer-text-color bg-custom-footer">
+      <p class=" text-center py-4">© Copyright 2024 Restan. All Rights Reserved by Restan.</p>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+
+  <!-- Bootstrap js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!--  font icon js  -->
+  <script src="assets/js/all.min.js"></script>
+</body>
+
+</html>
